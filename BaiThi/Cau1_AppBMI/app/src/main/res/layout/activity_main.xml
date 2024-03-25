@@ -37,11 +37,10 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView7"
                 android:layout_width="170px"
                 android:layout_height="170px"
-                app:srcCompat="@drawable/ic_launcher_background"
-                tools:srcCompat="@drawable/mars_solid__1_" />
+                app:srcCompat="@drawable/mars_solid__1_" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -67,11 +66,10 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView8"
                 android:layout_width="170px"
                 android:layout_height="170px"
-                app:srcCompat="@drawable/ic_launcher_background"
-                tools:srcCompat="@drawable/venus_solid" />
+                app:srcCompat="@drawable/venus_solid" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -190,26 +188,24 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/cnT"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="10dp"
+                    android:id="@+id/cnTru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:srcCompat="@drawable/minus_solid" />
+                    app:srcCompat="@drawable/minus_solid" />
 
                 <ImageView
-                    android:id="@+id/cnP"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/cnCong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:srcCompat="@drawable/plus_solid" />
+                    app:srcCompat="@drawable/plus_solid" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
@@ -249,26 +245,24 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/tuoiT"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="10dp"
+                    android:id="@+id/tuoiTru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:srcCompat="@drawable/minus_solid" />
+                    app:srcCompat="@drawable/minus_solid" />
 
                 <ImageView
-                    android:id="@+id/tuoiP"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:id="@+id/tuoiCong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:srcCompat="@drawable/plus_solid" />
+                    app:srcCompat="@drawable/plus_solid" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
