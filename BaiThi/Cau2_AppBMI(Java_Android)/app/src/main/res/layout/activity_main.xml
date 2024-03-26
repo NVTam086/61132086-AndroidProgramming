@@ -30,7 +30,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="36dp"
-            android:background="@drawable/shapecontroller"
+            android:background="@drawable/notfocus"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginEnd="36dp"
-            android:background="@drawable/shapecontroller"
+            android:background="@drawable/notfocus"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="right"
-                android:text="170"
+                android:text="0"
                 android:textColor="#FFFFFF"
                 android:textSize="40dp"
                 android:textStyle="bold" />
@@ -179,7 +179,7 @@
                 android:layout_marginTop="7dp"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="55"
+                android:text="0"
                 android:textColor="#FFFFFF"
                 android:textSize="34sp" />
 
@@ -236,7 +236,7 @@
                 android:layout_marginTop="7dp"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
-                android:text="22"
+                android:text="0"
                 android:textColor="#FFFFFF"
                 android:textSize="34sp" />
 
