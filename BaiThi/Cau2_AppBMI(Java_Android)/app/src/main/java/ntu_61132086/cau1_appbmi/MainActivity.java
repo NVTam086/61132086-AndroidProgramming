@@ -15,12 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
-    TextView txtChieuCaoV, txtCanNangV, txtTuoiV;
+    TextView txtChieuCaoV, txtCanNangV;
     SeekBar seekBarCcaoS, seekBarCnS;
     LinearLayout maleL, femaleL;
     Button btnTinhB;
     String gtinh = "0";
-    int chieucao, cnang;
+    float chieucao, cnang, bmi;
 
     void TimDieuKhien(){
         txtChieuCaoV = findViewById(R.id.txtCcao);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        seekBarCcaoS.setMax(300);
+        seekBarCcaoS.setMax(250);
         seekBarCcaoS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        seekBarCnS.setMax(500);
+        seekBarCnS.setMax(200);
         seekBarCnS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
         btnTinhB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String strccao = txtChieuCaoV.getText().toString();
+                String strcnang = txtCanNangV.getText().toString();
                 if(gtinh.equals("0")){
                     Toast.makeText(getApplicationContext(),"Hãy chọn giới tính",Toast.LENGTH_SHORT).show();
                 } else if (chieucao == 0) {
@@ -103,10 +105,12 @@ public class MainActivity extends AppCompatActivity {
                 } else if (cnang == 0 ) {
                     Toast.makeText(getApplicationContext(),"Cân nặng không đúng",Toast.LENGTH_SHORT).show();
                 }else{
+                    chieucao = Float.parseFloat(strccao);
+                    cnang = Float.parseFloat(strcnang);
+                    chieucao = chieucao/100;
+                    bmi = cnang/(chieucao*chieucao);
                     Intent intent =new Intent(MainActivity.this, DislayResult.class);
-                    intent.putExtra("gioitinh",gtinh);
-                    intent.putExtra("chieucao",chieucao);
-                    intent.putExtra("cannang",cnang);
+                    intent.putExtra("bmi",bmi);
                     startActivity(intent);
                 }
 

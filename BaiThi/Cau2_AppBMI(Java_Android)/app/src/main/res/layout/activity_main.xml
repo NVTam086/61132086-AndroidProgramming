@@ -154,7 +154,7 @@
             android:layout_marginTop="15dp"
             android:layout_weight="1"
             android:fontFamily="@font/roboto_bold"
-            android:text="Câng nặng"
+            android:text="Cân nặng"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />

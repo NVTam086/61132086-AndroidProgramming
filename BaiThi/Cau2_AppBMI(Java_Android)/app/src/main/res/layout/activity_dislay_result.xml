@@ -43,17 +43,17 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         android:layout_margin="20dp"
         android:background="@drawable/shapecontroller"
         android:gravity="center">
 
         <TextView
             android:id="@+id/txtDanhGia"
-            android:layout_width="205dp"
-            android:layout_height="66dp"
+            android:layout_width="284dp"
+            android:layout_height="131dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center"
@@ -69,7 +69,7 @@
             android:layout_width="170dp"
             android:layout_height="100dp"
             android:layout_marginStart="37dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="50dp"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center"
@@ -82,14 +82,14 @@
 
         <TextView
             android:id="@+id/txtNhanXet"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="52dp"
             android:fontFamily="@font/roboto_bold"
-            android:text="BMI cho thấy bạn bình thường "
+            android:gravity="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtKq" />
     </androidx.constraintlayout.widget.ConstraintLayout>
