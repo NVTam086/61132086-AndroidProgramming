@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,22 +16,17 @@ import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
     TextView txtChieuCaoV, txtCanNangV, txtTuoiV;
-    ImageView giamCanNangI, giamTuoiI, tangCanNangI, tangTuoiI;
-    SeekBar seekBarS;
+    SeekBar seekBarCcaoS, seekBarCnS;
     LinearLayout maleL, femaleL;
     Button btnTinhB;
-    String gtinh;
-    int cnang, tuoi;
+    String gtinh = "0";
+    int chieucao, cnang;
 
     void TimDieuKhien(){
-        txtChieuCaoV = findViewById(R.id.txtChieucao);
-        txtCanNangV = findViewById(R.id.txtCanNang);
-        txtTuoiV = findViewById(R.id.txtTuoi);
-        giamCanNangI = findViewById(R.id.imgGiamCanNang);
-        giamTuoiI = findViewById(R.id.imgGiamTuoi);
-        tangCanNangI = findViewById(R.id.imgTangCanNang);
-        tangTuoiI = findViewById(R.id.imgTangTuoi);
-        seekBarS = findViewById(R.id.seekBar);
+        txtChieuCaoV = findViewById(R.id.txtCcao);
+        txtCanNangV = findViewById(R.id.txtCnang);
+        seekBarCcaoS = findViewById(R.id.seekBarCcao);
+        seekBarCnS = findViewById(R.id.seekBarCnang);
         maleL = findViewById(R.id.male);
         femaleL = findViewById(R.id.female);
         btnTinhB = findViewById(R.id.btnTinh);
@@ -60,11 +56,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        seekBarS.setMax(300);
-        seekBarS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarCcaoS.setMax(300);
+        seekBarCcaoS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                txtChieuCaoV.setText(String.valueOf(progress));
+                chieucao = progress;
+                txtChieuCaoV.setText(String.valueOf(chieucao));
             }
 
             @Override
@@ -77,45 +74,42 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        giamCanNangI.setOnClickListener(new View.OnClickListener() {
+        seekBarCnS.setMax(500);
+        seekBarCnS.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onClick(View v) {
-                cnang = cnang - 1;
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                cnang = progress;
                 txtCanNangV.setText(String.valueOf(cnang));
             }
-        });
-        giamCanNangI.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View v) {
-                cnang = cnang - 1;
-                txtCanNangV.setText(String.valueOf(cnang));
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
             }
         });
-        tangCanNangI.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cnang = cnang + 1;
-                txtCanNangV.setText(String.valueOf(cnang));
-            }
-        });
-        giamTuoiI.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tuoi = tuoi - 1;
-                txtTuoiV.setText(String.valueOf(tuoi));
-            }
-        });
-        tangTuoiI.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tuoi = tuoi + 1;
-                txtTuoiV.setText(String.valueOf(tuoi));
-            }
-        });
+
         btnTinhB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DislayResult.class));
+                if(gtinh.equals("0")){
+                    Toast.makeText(getApplicationContext(),"Hãy chọn giới tính",Toast.LENGTH_SHORT).show();
+                } else if (chieucao == 0) {
+                    Toast.makeText(getApplicationContext(),"Chiều cao không đúng",Toast.LENGTH_SHORT).show();
+                } else if (cnang == 0 ) {
+                    Toast.makeText(getApplicationContext(),"Cân nặng không đúng",Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent =new Intent(MainActivity.this, DislayResult.class);
+                    intent.putExtra("gioitinh",gtinh);
+                    intent.putExtra("chieucao",chieucao);
+                    intent.putExtra("cannang",cnang);
+                    startActivity(intent);
+                }
+
             }
         });
     }
