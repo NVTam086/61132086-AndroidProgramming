@@ -135,7 +135,7 @@
         </LinearLayout>
 
         <SeekBar
-            android:id="@+id/seekBar2"
+            android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
@@ -173,7 +173,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtCannang"
+                android:id="@+id/txtCanNang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
@@ -188,7 +188,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/cnTru"
+                    android:id="@+id/imgGiamCanNang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -198,7 +198,7 @@
                     app:srcCompat="@drawable/minus_solid" />
 
                 <ImageView
-                    android:id="@+id/cnCong"
+                    android:id="@+id/imgTangCanNang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -245,7 +245,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/tuoiTru"
+                    android:id="@+id/imgGiamTuoi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -255,7 +255,7 @@
                     app:srcCompat="@drawable/minus_solid" />
 
                 <ImageView
-                    android:id="@+id/tuoiCong"
+                    android:id="@+id/imgTangTuoi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
