@@ -11,7 +11,7 @@
   <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="600">
 </h2>
 
-## Sản phẩm của dự án
-### 🎨 Giao diện chính
-![Giao diện chính](images/ex2.png)
+## 
+### Giao diện chính
+![Giao diện chính](images/ex2.jpg)
 
