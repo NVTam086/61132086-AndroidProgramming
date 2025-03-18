@@ -10,3 +10,11 @@
 <h2 align="center">
   <img src="https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg" width="600">
 </h2>
+
+## Ảnh của dự án
+### Ex2_LinearLayout
+<p align="center">
+  <img src="images/ex2.jpg" alt="" width="200">
+</p>
+
+
