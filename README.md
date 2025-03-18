@@ -17,4 +17,9 @@
   <img src="images/ex2.jpg" alt="" width="200">
 </p>
 
-
+### Ex3_SimpleSumApp
+<p align="center">
+  <img src="images/ex3_1.jpg" alt="" width="200">
+  <img src="images/ex3_2.jpg" alt="" width="200">
+  <img src="images/ex3_3.jpg" alt="" width="200">
+</p>
