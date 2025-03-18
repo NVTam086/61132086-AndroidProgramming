@@ -13,5 +13,5 @@
 
 ## Sản phẩm của dự án
 ### 🎨 Giao diện chính
-![Giao diện chính](assets/images/product1.png)
+![Giao diện chính](images/ex2.png)
 
