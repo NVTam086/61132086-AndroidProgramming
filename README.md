@@ -39,9 +39,16 @@
   <img src="images/ex6_3.jpg" alt="" width="200">
 </p>
 
-### Ex7_IntentLogin
+### Ex7 IntentLogin
 <p align="center">
   <img src="images/ex7_1.jpg" alt="" width="200">
   <img src="images/ex7_2.jpg" alt="" width="200">
   <img src="images/ex7_3.jpg" alt="" width="200">
+</p>
+
+### Listview Danh sách bài hát
+<p align="center">
+  <img src="images/lv_1.jpg" alt="" width="200">
+  <img src="images/lv_2.jpg" alt="" width="200">
+  <img src="images/lv_3.jpg" alt="" width="200">
 </p>
