@@ -12,14 +12,29 @@
 </h2>
 
 ## Ảnh của dự án
-### Ex2_LinearLayout
+### Ex2 LinearLayout
 <p align="center">
   <img src="images/ex2.jpg" alt="" width="200">
 </p>
 
-### Ex3_SimpleSumApp
+### Ex3 SimpleSumApp
 <p align="center">
   <img src="images/ex3_1.jpg" alt="" width="200">
   <img src="images/ex3_2.jpg" alt="" width="200">
   <img src="images/ex3_3.jpg" alt="" width="200">
+</p>
+
+### Ex4 and Ex5 AddSubMulDiv
+<p align="center">
+  <img src="images/ex4_cong.jpg" alt="" width="200">
+  <img src="images/ex4_tru.jpg" alt="" width="200">
+  <img src="images/ex4_nhan.jpg" alt="" width="200">
+  <img src="images/ex4_chia.jpg" alt="" width="200">
+</p>
+
+### Ex6 IntentDonGian
+<p align="center">
+  <img src="images/ex6_1.jpg" alt="" width="200">
+  <img src="images/ex6_2.jpg" alt="" width="200">
+  <img src="images/ex6_3.jpg" alt="" width="200">
 </p>
