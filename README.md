@@ -12,7 +12,7 @@
 </h2>
 
 ## Ảnh của dự án
-### 
+### Ex2_LinearLayout
 <p align="center">
   <img src="images/ex2.jpg" alt="" width="200">
 </p>
