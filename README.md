@@ -32,6 +32,11 @@
   <img src="images/ex4_chia.jpg" alt="" width="200">
 </p>
 
+### Tính BMI
+<p align="center">
+  <img src="images/bmi.jpg" alt="" width="200">
+</p>
+
 ### Ex6 IntentDonGian
 <p align="center">
   <img src="images/ex6_1.jpg" alt="" width="200">
@@ -51,4 +56,10 @@
   <img src="images/lv_1.jpg" alt="" width="200">
   <img src="images/lv_2.jpg" alt="" width="200">
   <img src="images/lv_3.jpg" alt="" width="200">
+</p>
+
+### Bài 1 - Kid learning app (figma)
+<p align="center">
+  <img src="images/land.jpg" alt="" width="200">
+  <img src="images/home.jpg" alt="" width="200">
 </p>
